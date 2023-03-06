@@ -5,19 +5,45 @@
 	<meta name='viewport'
 	      content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'>
 	<meta http-equiv='X-UA-Compatible' content='ie=edge'>
+	<link rel='stylesheet' href='css/owl.carousel.css'>
+	<link rel='stylesheet' href='css/owl.theme.default.css'>
+	<link rel='stylesheet' href='css/mobile-menu.css'>
+	<link rel='stylesheet' href='css/media.css'>
 	<link rel='stylesheet' href='css/reset.css'>
 	<link rel='stylesheet' href='css/style.css'>
 	<title>California</title>
 </head>
 <body>
+<!--	<header>-->
+<!--		<div class='container'>-->
+<!--			<a href='#' class='logo'>-->
+<!--				<img src='images/logo.svg' alt='logo'></a>-->
+<!--			<nav>-->
+<!--				<ul>-->
+<!--					<li><a href='#'>all products</a></li>-->
+<!--					<li><a href='#'>Solutions<i></i></a></li>-->
+<!--					<li><a href='#'>About</a></li>-->
+<!--					<li><a href='#'>Support</a></li>-->
+<!--				</ul>-->
+<!--			</nav>-->
+<!--			<ul>-->
+<!--				<li><a href='#'><img src='images/search.svg' alt='search'></a></li>-->
+<!--				<li><a href='#'><img src='images/basket.svg' alt='basket'></a></li>-->
+<!--			</ul>-->
+<!--		</div>-->
+<!--	</header>-->
 	<header>
 		<div class='container'>
-			<a href='#' class='logo'>
-				<img src='images/logo.svg' alt='logo'></a>
-			<nav>
+		
+			<div id='toggle'>
+				<input type='checkbox'>
+				<span></span>
+			</div>
+			<a class='logo' href='#'><img src='images/logo.svg' alt='logo'></a>
+			<nav id='menu'>
 				<ul>
 					<li><a href='#'>all products</a></li>
-					<li><a href='#'>Solutions</a></li>
+					<li><a href='#'>Solutions<i></i></a></li>
 					<li><a href='#'>About</a></li>
 					<li><a href='#'>Support</a></li>
 				</ul>
@@ -29,7 +55,29 @@
 		</div>
 	</header>
 	<main>
-		<section class='main-banner'>
+		<section class='main-banner owl-carousel'>
+			<div class='container '>
+				<div class='content'>
+					<h1>The new phones are here take a look.</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
+					   morbi turpis.</p>
+					<a class='btn' href='#'>Explore</a>
+				</div>
+				<div class='img'>
+					<img src='images/main-banner.png' alt='phone'>
+				</div>
+			</div>
+			<div class='container'>
+				<div class='content'>
+					<h1>The new phones are here take a look.</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
+					   morbi turpis.</p>
+					<a class='btn' href='#'>Explore</a>
+				</div>
+				<div class='img'>
+					<img src='images/main-banner.png' alt='phone'>
+				</div>
+			</div>
 			<div class='container'>
 				<div class='content'>
 					<h1>The new phones are here take a look.</h1>
@@ -48,15 +96,29 @@
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam, tempor. Faucibus
 				   morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 				<div class='flex-container'>
-					<article class='card-1'>
-						<div class='container-img'>
-							<img src='images/shop1.png' alt='img'>
-						</div>
-						<div class='content'>
-							<p>Laptops</p>
-							<h3>True Laptop Solution</h3>
-						</div>
-					</article>
+					<div class='flex-left'>
+						<article>
+							<div class='container-img'>
+								<img src='images/shop1.png' alt='img'>
+							</div>
+							<div class='content'>
+								<p>Laptops</p>
+								<h3>True Laptop Solution</h3>
+							</div>
+						</article>
+						<article>
+							<div class='container-img'>
+								<img src='images/shop2.png' alt='img'>
+							</div>
+							<div class='content'>
+								<p>Watch</p>
+								<h3>Not just stylisht</h3>
+							</div>
+						</article>
+					</div>
+					<div class='flex-right'>
+					
+					
 					<article>
 						<div class='container-img'>
 							<img src='images/shop3.png' alt='img'>
@@ -75,15 +137,7 @@
 							<h3>Empower your work</h3>
 						</div>
 					</article>
-					<article>
-						<div class='container-img'>
-							<img src='images/shop2.png' alt='img'>
-						</div>
-						<div class='content'>
-							<p>Watch</p>
-							<h3>Not just stylisht</h3>
-						</div>
-					</article>
+					</div>
 				</div>
 			</div>
 		</section>
@@ -134,7 +188,6 @@
 					</article>
 				</div>
 			</div>
-		
 		</section>
 		<section class='see-the-best'>
 			<div class='container'>
@@ -156,9 +209,7 @@
 					<article>
 						<p>Smart light bulb pack</p>
 						<h4>Every product</h4>
-						
-					<a class='btn' href='#'>Explore</a>
-						
+						<a class='btn' href='#'>Explore</a>
 						<img src='images/img3.png' alt='img'>
 					</article>
 				</div>
@@ -181,15 +232,15 @@
 				</div>
 				<p><a href='#'>See all</a></p>
 			</div>
-		
 		</section>
 		<section class='looking'>
 			<div class='container'>
 				<h2>Looking for anything else?</h2>
-				<form action='' method=''>
-					<input type='text' name='search' class='form-control' placeholder='Search keyword'>
-				
+				<div class='icon'></div>
+				<form action='' method='' class='main-input'>
+					<input type='text' name='search'class='form-control' placeholder='Search keyword'>
 				</form>
+				<form action='' method='' >
 				<div class='flex-container'>
 					<a class='btn' href='#'>iPhone</a>
 					<a class='btn' href='#'>Charger</a>
@@ -201,6 +252,7 @@
 					<a class='btn' href='#'>Laptop</a>
 					<a class='btn' href='#'>Mobile</a>
 				</div>
+				</form>
 				<article>
 					<h2>Never miss a thing</h2>
 					<p>Sign up for texts to be notified about our best offers on the perfect gifts.</p>
@@ -260,7 +312,18 @@
 				</div>
 			</div>
 		</footer>
-	
+		<!--	вставляем ссылку с fontawesome-->
+		<!--	<i class="fa-solid fa-chevron-left"></i>-->
+		<!--	подключаем fontawesome-->
+		<script src='https://kit.fontawesome.com/b167fcff7e.js' crossorigin='anonymous'></script>
+		<!--	1 подключаем jquery для подключения карусели-->
+		<script
+			src='https://code.jquery.com/jquery-3.6.3.js'
+			integrity='sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM='
+			crossorigin='anonymous'></script>
+		<!--	3 подключаем js-файл owlcarousel оббязательно после библиотеки jquery-->
+		<script src='js/owl.carousel.js'></script>
+		<script src='js/scripts.js'></script>
 	</main>
 </body>
 </html>
