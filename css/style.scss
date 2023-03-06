@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Readex+Pro&display=swap');
 @import url(owl.carousel.css);
 @import "owl.theme.default.css";
+@import "mobile-menu.css";
 @import "reset.css";
-@import "style.css";
+
 
 $main-font: 'Readex Pro', sans-serif;
 $secondary-font: 'Inter', sans-serif;
@@ -967,7 +968,7 @@ footer {
     flex-wrap: wrap;
     margin-bottom: 52px;
     @include max-screen(1200px) {
-      padding: 0 28px 28px 28px;
+      padding: 0 0 28px 10px;
       margin-bottom: 22px;
     }
 
@@ -975,6 +976,12 @@ footer {
     .logo {
       width: 304px;
       margin-right: 118px;
+      @include max-screen(1200px) {
+        margin-right: 0;
+        @include max-screen(330px) {
+          width: 280px;
+        }
+      }
 
       a {
         padding-bottom: 18px;
@@ -987,6 +994,10 @@ footer {
         font-size: 16px;
         line-height: 19px;
         padding-bottom: 18px;
+        @include max-screen(330px) {
+          font-size: 14px;
+          line-height: 16px;
+        }
       }
     }
 
@@ -1002,6 +1013,10 @@ footer {
         @include max-screen(877px) {
           margin-bottom: 20px;
           margin-right: 40px;
+        }
+        @include max-screen(640px) {
+          width: 128px;
+          margin-right: 30px;
         }
 
 
@@ -1076,6 +1091,5 @@ footer {
     }
   }
 }
-
 @import "media-new.css";
 
