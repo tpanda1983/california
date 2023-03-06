@@ -148,7 +148,13 @@ header {
     .owl-prev {
       position: absolute;
       top: 50%;
-      left: 0;
+      left: 7%;
+      @include max-screen(1400px) {
+        left: 4%;
+      }
+      @include max-screen(1300px) {
+        left: 0;
+      }
 
       &:before {
         content: "";
@@ -162,7 +168,13 @@ header {
     .owl-next {
       position: absolute;
       top: 50%;
-      right: 0;
+      right: 7%;
+      @include max-screen(1400px) {
+        right: 4%;
+      }
+      @include max-screen(1300px) {
+       right: 0;
+      }
 
       &:before {
         content: "";

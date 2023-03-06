@@ -74,7 +74,13 @@ header {
   .main-banner .owl-nav .owl-prev {
     position: absolute;
     top: 50%;
-    left: 0; }
+    left: 7%; }
+  @media screen and (max-width: 1400px) {
+    .main-banner .owl-nav .owl-prev {
+      left: 4%; } }
+  @media screen and (max-width: 1300px) {
+    .main-banner .owl-nav .owl-prev {
+      left: 0; } }
     .main-banner .owl-nav .owl-prev:before {
       content: "";
       background-image: url("../images/chevron.svg");
@@ -84,7 +90,13 @@ header {
   .main-banner .owl-nav .owl-next {
     position: absolute;
     top: 50%;
-    right: 0; }
+    right: 7%; }
+  @media screen and (max-width: 1400px) {
+    .main-banner .owl-nav .owl-next {
+      right: 4%; } }
+  @media screen and (max-width: 1300px) {
+    .main-banner .owl-nav .owl-next {
+      right: 0; } }
     .main-banner .owl-nav .owl-next:before {
       content: "";
       background-image: url("../images/chevron.svg");
